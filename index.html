@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="w-11/12 mx-auto py-4">
+
+    <nav class="flex lg:justify-between">
+        <div class="flex ">
+            <img class="w-[35px] h-[35px]" src="assets/logo.webp" alt="">
+            <h2 class="ml-2 mt-1 font-bold text-xl">Peddy</h2>
+        </div>
+
+        <ul class="flex text-gray-600 gap-4 py-1 ml-[50px]">
+            <li>Home</li>
+            <li>Shop</li>
+            <li>Contact</li>
+        </ul>
+        <div>
+            <img class="w-[35px] h-[35px] ml-[60px] lg:ml-0" src="https://img.icons8.com/?size=50&id=45193&format=png"
+                alt="">
+        </div>
+    </nav>
+
+    <!-- banner section -->
+
+    <div class="mt-[120px]">
+        <div class="text-center">
+            <h2 class="text-gray-600 text-2xl ">Bringing Families Together ❤️‍🔥
+            </h2>
+            <p class="font-bold text-7xl mt-4"> Your Path to Adoption Starts Here</p>
+            <p class="font-bold text-md mt-3">It is a long established fact that a reader will be distracted by the
+                readable
+                content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a.</p>
+            <button class="btn btn-success mt-5 ">Show More</button>
+        </div>
+
+        <div>
+            <img class="lg:ml-[140px]" src="assets/pet.webp" alt="">
+        </div>
+    </div>
+
+    <div class="mt-[100px] text-center">
+        <h1 class="font-bold text-4xl">Adopt Your Best Friend</h1>
+        <p class="text-xl mt-3 text-gray-600">It is a long established fact that a reader will be distracted by the
+            readable content
+            of a
+            page when looking
+            at its layout. The point of using Lorem Ipsum is that it has a.</p>
+    </div>
+
+
+    <!-- implement dynamic value  -->
+
+    <div class="mt-[100px] flex justify-between" id="category-list"></div>
+
+
+    <div class="flex justify-between mt-10 ">
+        <h1 class="font-bold text-xl mt-5">Best Deal For You</h1>
+        <button class=" btn btn-success mt-3 ">Short By Price</button>
+    </div>
+
+    <!-- implement the all pets value in dynamic 🌌  -->
+    <div class=" lg:flex mt-10">
+        <div id="all-pets-data" class="grid lg:grid-cols-3 gap-3">
+
+        </div>
+        <div id=class="grid grid-col-2">
+            <div>
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Open the modal using ID.showModal() method -->
+    <button id="show-modal" class="btn hidden" onclick="coustomModal.showModal()">open modal</button>
+    <dialog id="coustomModal" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content">
+
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+    <button id="show-modal-2" class="btn hidden" onclick="coustomModal.showModal()">open modal</button>
+    <dialog id="coustomModal-2" class="modal modal-bottom sm:modal-middle">
+        <div class="modal-box">
+            <div id="modal-content-2">
+                <div id="timer">
+
+
+                </div>
+            </div>
+
+            <div class="modal-action">
+                <form method="dialog">
+                    <!-- if there is a button in form, it will close the modal -->
+                    <button class="btn">Close</button>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
